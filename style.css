@@ -1,0 +1,63 @@
+body {
+	background-color: black;
+	color: white;
+}
+
+.card-text {
+	color: lightgreen;
+}
+
+.card-title {
+  color: gold;
+  text-shadow: 0px 0px 15px;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	justify-content: space-around;
+
+}
+footer {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+.card {
+  font-family: URW Chancery L, cursive, Arial, sans-serif;
+  text-align: center;
+  margin: auto;
+  top: 20px;
+  background-color: black;
+  color: white;
+  border: 1px solid lightgreen;
+  margin-top: 20px;
+  transition: transform 1s ease-out;
+}
+
+.card:hover {
+  transform: translate(0px, -10px);
+  box-shadow: 2px 2px 15px 2px;
+}
+
+.container-fluid {
+  justify-content: space-between;
+}
+
+#NavText {
+  font-family: "Apple Chancery", cursive, Arial, sans-serif;
+  color: lime;
+  text-shadow: 10px 10px 10px;
+}
+
+#NavText img {
+  -webkit-box-shadow: 0 15px 20px -6px green;
+     -moz-box-shadow: 0 15px 20px -6px red;
+          box-shadow: 0 15px 20px -6px aqua;
+}
+
+.btn {
+  box-shadow: 1px 5px 10px 1px rgb(30,30,30);
+}

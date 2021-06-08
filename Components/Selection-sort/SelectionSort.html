@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../Main Styling/style.css">
+
+  <title>Selection Sort</title>
+</head>
+<body>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+  <header>
+    <h1>SELECTION SORT</h1>
+  </header>
+
+  <!-- CANVAS -->
+  
+  <div class="myCanvas">
+    <canvas id="canvas" width="800" height="500"></canvas>
+  </div>
+
+  <!-- CHECKBOX -->
+
+  <div id="Number-container"><input type="checkbox" name="Number" id="Number" onchange="showNumbers(this)"> Show Number</div>
+
+  <!-- Speed Tracker -->
+
+  <div class="tracker">
+    
+    <div id='speed-label'>
+      <select name="speed" id="speed" onchange="changeSpeed()">
+        <option value="none" selected hidden>Select SPEED </option> 
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+
+    <div id='size-label'>
+      <select name="size" id="size" onchange="changeSizeOfBlocks()">
+        <option value="none" selected hidden>Select BAR SIZE </option> 
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+  </div>
+   
+
+
+   <!-- Button Collections -->
+
+  <div class="buttonCollection">
+    <input class="button" type="button" name="Selection Sort" value="Selection Sort" onclick="selectionSort()">
+
+    <div class="resetButtonDiv">
+      <input id="resetButton" type="button" value="Reset" onclick="resetAll()">
+    </div>
+
+
+  <!-- Footer -->
+  <footer>
+	  	SELECTION SORT
+  </footer>
+
+  <script src="../Main Script/ArrayProvider.js" defer></script>
+  <script src="./script.js" defer></script>
+
+</body>
+</html>

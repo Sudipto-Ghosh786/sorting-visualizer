@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(10, 10, 10);
+}
+
+
+h1 {
+  font-family: "Apple Chancery", cursive;
+  margin: auto;
+  margin-top: 5px;
+  text-align: center;
+  color: lime;
+  width: 90vw;
+  text-shadow: 0px 2px 20px;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 100%;
+}
+
+.myCanvas {
+  align-items: center;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+}
+#canvas {
+  border: 3px yellow;
+  border-style: ridge;
+  border-radius: 10px;
+}
+
+#Number-container {
+  color: white;
+  text-align: center;
+}
+
+.card {
+  text-align: center;
+  margin: auto;
+  top: 20px;
+  background-color: black;
+  color: white;
+  border: 1px solid lightgreen;
+  margin-top: 20px;
+  transition: transform 1s ease-out;
+}
+
+.card:hover {
+  transform: translate(0px, -10px);
+}
+
+.container-fluid {
+  justify-content: space-between;
+}
+
+.tracker {
+  text-align: center;
+  margin: 5px 5px 5px 5px;
+  padding: 3px 3px 3px 3px;
+  margin: auto;
+}
+
+#speed-label,#size-label {
+  margin: 14px 14px 14px 14px;
+  color: darkgreen;
+  font-weight: bold;
+  font-size: 18px;
+  color: red;
+  background: transparent;
+}
+
+#speed,#size {
+  width: 220px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+}
+
+.buttonCollection {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.button {
+  border-radius: 5px;
+  margin: 2px 2px 2px 2px;
+  background-color: #04fa00;
+  border: none;
+  width: 200px;
+  height: 50px;
+  transition: 0.3s all ease-out;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: cyan;
+}
+.resetButtonDiv {
+  text-align: center;
+  margin: auto;
+  padding: 5px 5px 5px 5px;
+}
+
+
+#resetButton {
+  background-color: red;
+  border: none;
+  color: ghostwhite;
+  width: 200px;
+  height: 50px;
+  transition: 0.3s all ease-out;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#resetButton:hover {
+  background-color: #ff0d00;
+  opacity: 1;
+}
